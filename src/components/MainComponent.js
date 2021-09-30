@@ -22,9 +22,7 @@ class Main extends Component {
           </div>
         </Navbar>
         <Home />
-        <Contact />
-        <About />
-        <Project />
+     
       </div>
     );
   }
