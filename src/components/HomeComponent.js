@@ -1,12 +1,6 @@
 import React, { Component } from "react";
-import {
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardText,
-  CardBody,
-  CardTitle,
-} from "reactstrap";
+
+import { Card, CardText, CardBody, CardTitle, CardLink } from "reactstrap";
 
 class Home extends Component {
   constructor(props) {
@@ -24,9 +18,17 @@ class Home extends Component {
     if (project) {
       return (
         <Card>
-          <CardImg top src={project.image} alt={project.name} />
           <CardBody>
-            <CardText>{project.description}</CardText>
+            <CardTitle>{project.name}</CardTitle>
+          </CardBody>
+          <img with="100%" src={project.image} alt={project.name} />
+          <CardBody>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <CardLink href="#">Card Link</CardLink>
+            <CardLink href="#">Another Link</CardLink>
           </CardBody>
         </Card>
       );
@@ -35,14 +37,19 @@ class Home extends Component {
   }
 
   render() {
-    const directory = this.props.projects.map(project => {
+    const directory = this.props.projects.map((project) => {
       return (
         <div key={project.id} className="col-md-5 m-1">
-          <Card onClick={() => this.onProjectSelect(project)}>
-            <CardImg width="100%" src={project.image} alt={project.name} />
-            <CardImgOverlay>
+          <Card>
+            <CardBody>
               <CardTitle>{project.name}</CardTitle>
-            </CardImgOverlay>
+            </CardBody>
+            <img with="100%" src={project.image} alt={project.name} />
+            <CardBody>
+              <CardText>{project.description}</CardText>
+              <CardLink href={project.live}>Link</CardLink>
+              <CardLink href={project.github1}>Github</CardLink>
+            </CardBody>
           </Card>
         </div>
       );

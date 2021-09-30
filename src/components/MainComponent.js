@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import Home from "./HomeComponent";
-import Contact from "./ContactComponent";
-import About from "./AboutComponent";
-import Project from "./ProjectComponent";
+// import Contact from "./ContactComponent";
+// import About from "./AboutComponent";
+// import Project from "./ProjectComponent";
+import {PROJECTS} from '../shared/projects';
 import { Navbar, NavbarBrand } from "reactstrap";
 
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { projects: PROJECTS };
   }
 
   render() {
@@ -21,8 +22,7 @@ class Main extends Component {
             </NavbarBrand>
           </div>
         </Navbar>
-        <Home />
-     
+        <Home projects={this.state.projects} />
       </div>
     );
   }
