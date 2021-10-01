@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     id: 0,
     name: "MEME MACHINE",
-    image: "assets/images/memelord.jpg",
+    image: "assets/images/meme.png",
     live: "https://www.youtube.com/watch?v=xurBnVRslns&ab_channel=ClaireHelps",
     github1: "https://github.com/CXL3/React-Native-Mobile-Project-Meme-Machine",
 
@@ -12,7 +12,7 @@ export const PROJECTS = [
   {
     id: 1,
     name: "SLIMSTYLE",
-    image: "assets/images/memelord.jpg",
+    image: "assets/images/style.png",
     live: "https://slimstyling.herokuapp.com/home",
     github1: "https://github.com/CXL3/React-Portfolio-styling-website",
 
@@ -22,7 +22,7 @@ export const PROJECTS = [
   {
     id: 2,
     name: "MAMA HELP MAMAS",
-    image: "assets/images/memelord.jpg",
+    image: "assets/images/mom.png",
     live: "",
     github1: "https://github.com/CXL3/Bootstrap-portfolio-Mama-help-mamas",
 
@@ -32,7 +32,7 @@ export const PROJECTS = [
   {
     id: 3,
     name: "Published Android Apps",
-    image: "assets/images/memelord.jpg",
+    image: "assets/images/android.png",
     live: "https://play.google.com/store/apps/developer?id=Claire+L.&hl=en_US",
     github1:
       "https://github.com/CXL3/GratefuList-Android-app-Java-published-by-clairelu",

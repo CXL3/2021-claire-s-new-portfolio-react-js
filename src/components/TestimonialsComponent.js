@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-// import "./node_modules/react-dat-gui/build/react-dat-gui.css";
 import DatGui, { DatNumber, DatSelect, DatButton } from "react-dat-gui";
 
 import FluidAnimation from "react-fluid-animation";
@@ -13,14 +12,14 @@ const defaultConfig = {
   pressureDissipation: 0.8,
   pressureIterations: 25,
   curl: 30,
-  splatRadius: 0.005
+  splatRadius: 0.005,
 };
 
-export default class Contact extends Component {
+export default class Testimonials extends Component {
   state = {
     config: {
-      ...defaultConfig
-    }
+      ...defaultConfig,
+    },
   };
 
   componentDidMount() {
@@ -33,7 +32,7 @@ export default class Contact extends Component {
     return (
       <div
         style={{
-          height: "100vh"
+          height: "100vh",
         }}
       >
         <FluidAnimation config={config} animationRef={this._animationRef} />
@@ -53,17 +52,18 @@ export default class Contact extends Component {
             alignItems: "center",
             color: "#fff",
             fontFamily: 'Quicksand, "Helvetica Neue", sans-serif',
-            pointerEvents: "none"
+            pointerEvents: "none",
           }}
         >
           <h1
             style={{
-              fontSize: "3em",
-              textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)"
+              fontSize: "5em",
+              textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)",
             }}
           >
-            React Fluid Animation
+            Claire Lu
           </h1>
+          <h2>Fullstack Developer</h2>
         </div>
 
         <DatGui data={config} onUpdate={this._onUpdate}>
@@ -122,12 +122,12 @@ export default class Contact extends Component {
     );
   }
 
-  _animationRef = ref => {
+  _animationRef = (ref) => {
     this._animation = ref;
     this._reset();
   };
 
-  _onUpdate = config => {
+  _onUpdate = (config) => {
     this.setState({ config });
   };
 

@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import Home from "./HomeComponent";
-// import Contact from "./ContactComponent";
+import ProjectCard from "./ProjectComponent";
+import Testimonials from "./TestimonialsComponent";
+import Contact from "./ContactComponent";
 // import About from "./AboutComponent";
 // import Project from "./ProjectComponent";
-import {PROJECTS} from '../shared/projects';
+import { PROJECTS } from "../shared/projects";
 import { Navbar, NavbarBrand } from "reactstrap";
 
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = { projects: PROJECTS };
+    this.state = { projects: PROJECTS, selectedProject: null };
   }
 
   render() {
@@ -22,7 +23,9 @@ class Main extends Component {
             </NavbarBrand>
           </div>
         </Navbar>
-        <Home projects={this.state.projects} />
+        
+        <Testimonials />
+        <ProjectCard projects={this.state.projects} />
       </div>
     );
   }

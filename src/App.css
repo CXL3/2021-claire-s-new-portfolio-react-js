@@ -3,6 +3,15 @@ body {
 }
 
 .card-title {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
 }
 
+.App {
+  text-align: center;
+}
+.container {
+  height:"900";
+}
+h1, h3, .card-body>.card-title {
+  font-family: "Lobster", cursive;
+}
