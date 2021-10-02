@@ -5,26 +5,28 @@ import ReactParticles from "react-particles-js";
 
 function Skill() {
   return (
-    <div className="main">
-      <Particles>
-        <Hero>
-          <div className="container">
-            <Info />
-            <div className="row">
-              {cards.map((card, i) => (
-                <div className="column">
-                  <Card>
-                    <div className="card-title">{card.title}</div>
-                    <div className="card-body">{card.description}</div>
-                    <Image ratio={card.imageRatio} src={card.image} />
-                  </Card>
-                </div>
-              ))}
+    <section id="skill">
+      <div className="main" id="skillComponent">
+        <Particles>
+          <Hero>
+            <div className="container">
+              <Info />
+              <div className="row">
+                {cards.map((card, i) => (
+                  <div className="column">
+                    <Card>
+                      <div className="card-title">{card.title}</div>
+                      <div className="card-body">{card.description}</div>
+                      <Image ratio={card.imageRatio} src={card.image} />
+                    </Card>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </Hero>
-      </Particles>
-    </div>
+          </Hero>
+        </Particles>
+      </div>
+    </section>
   );
 }
 export default Skill;
@@ -161,4 +163,26 @@ function Info() {
   );
 }
 
-
+const cards = [
+  {
+    title: "Fullstack web and mobile development⚡️",
+    description:
+      "fill it later",
+    image: "assets/images/fullstack.png",
+    imageRatio: 784 / 1016,
+  },
+  {
+    title: "Android Development by Java 👩‍🎨",
+    description:
+      "Published application since 2016.",
+    image: "assets/images/android.png",
+    imageRatio: 839 / 1133,
+  },
+  {
+    title: "Certified AWS Solution Architect 🚀",
+    description:
+      "EC2",
+    image: "assets/images/AWS.png",
+    imageRatio: 730 / 1030,
+  },
+];

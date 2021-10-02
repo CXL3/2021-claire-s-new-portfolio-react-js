@@ -14,65 +14,6 @@ const defaultConfig = {
   curl: 30,
   splatRadius: 0.005,
 };
-function Menu() {
-  return (
-    <div>
-      <Button
-        style={{
-          position: "absolute",
-          left: 30,
-          right: 0,
-          top: 15,
-          width: 100,
-          backgroundColor: "transparent",
-          border: "none",
-        }}
-      >
-        SKILLS
-      </Button>
-      <Button
-        style={{
-          position: "absolute",
-          left: 140,
-          right: 0,
-          width: 100,
-          top: 15,
-          backgroundColor: "transparent",
-          border: "none",
-        }}
-      >
-        PROJECTS
-      </Button>
-      <Button
-        style={{
-          position: "absolute",
-          left: 270,
-          right: 0,
-          width: 100,
-          top: 15,
-          backgroundColor: "transparent",
-          border: "none",
-        }}
-      >
-        RESUME
-      </Button>
-
-      <Button
-        style={{
-          position: "absolute",
-          left: 390,
-          right: 0,
-          width: 100,
-          top: 15,
-          backgroundColor: "transparent",
-          border: "none",
-        }}
-      >
-        CONTACTS
-      </Button>
-    </div>
-  );
-}
 
 export default class Testimonials extends Component {
   state = {
@@ -90,6 +31,7 @@ export default class Testimonials extends Component {
 
     return (
       <div
+        id="home"
         style={{
           height: "100vh",
         }}
@@ -114,7 +56,6 @@ export default class Testimonials extends Component {
             pointerEvents: "none",
           }}
         >
-          <Menu />
           <h2
             style={{
               fontSize: "5em",
@@ -125,7 +66,7 @@ export default class Testimonials extends Component {
           </h2>
           <h2>Fullstack Developer</h2>
           <h3>Please try to draw here.</h3>
-          <Button >Download My Resume</Button>
+          <Button>Download My Resume</Button>
         </div>
 
         <DatGui data={config} onUpdate={this._onUpdate}>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ProjectCard from "./ProjectComponent";
 import Testimonials from "./TestimonialsComponent";
 import Skill from "./SkillComponent";
-// import Project from "./ProjectComponent";
+import Header from "./HeaderComponent";
 import { PROJECTS } from "../shared/projects";
 // import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -15,11 +15,10 @@ class Main extends Component {
   render() {
     return (
       <div className="App">
-  
+        <Header />
         <Testimonials />
         <Skill />
         <ProjectCard projects={this.state.projects} />
-
       </div>
     );
   }

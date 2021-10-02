@@ -17,7 +17,7 @@ class ProjectCard extends Component {
   renderSelectedProject(project) {
     if (project) {
       return (
-        <div background_color="#000000">
+        <div>
           <Card>
             <CardBody>
               <CardTitle>{project.name}</CardTitle>
@@ -41,14 +41,15 @@ class ProjectCard extends Component {
   render() {
     const directory = this.props.projects.map((project) => {
       return (
-        <div key={project.id} className="col-md-5 ">
+        <div key={project.id} className="col-12">
           <Card>
-            <CardBody>
-              <CardTitle>{project.name}</CardTitle>
-            </CardBody>
-            <img with="100%" src={project.image} alt={project.name} />
+           
+              <h1>{project.name}</h1>
+            
+
             <CardBody>
               <CardText>{project.description}</CardText>
+              <img with="100%" src={project.image} alt={project.name} />
               <CardLink href={project.live}>Link</CardLink>
               <CardLink href={project.github1}>Github</CardLink>
             </CardBody>
@@ -59,21 +60,18 @@ class ProjectCard extends Component {
 
     return (
       <div
-        className="hero"
+        id="project"
         style={{
-
-          padding: 100,
+          backgroundColor: "#000000",
+          padding: 0,
           alignItems: "center",
         }}
       >
-        <div className="row">
+        <div className="hero">
           <Info />
         </div>
 
-        <div
-        >
-          {directory}
-        </div>
+        <div>{directory}</div>
         <div className="row">
           <div className=" col-lg-10 m-1">
             {this.renderSelectedProject(this.state.selectedProject)}
@@ -95,6 +93,8 @@ function Info() {
           fontSize: 38,
           ontSize: "5em",
           textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)",
+          textAlign: "center",
+          alignItems: "center",
         }}
       >
         PROJECTS
