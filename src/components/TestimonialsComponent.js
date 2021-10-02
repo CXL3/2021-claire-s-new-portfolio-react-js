@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import DatGui, { DatNumber, DatSelect, DatButton } from "react-dat-gui";
-
+import { Button } from "reactstrap";
 import FluidAnimation from "react-fluid-animation";
 import random from "random";
 
@@ -14,6 +14,65 @@ const defaultConfig = {
   curl: 30,
   splatRadius: 0.005,
 };
+function Menu() {
+  return (
+    <div>
+      <Button
+        style={{
+          position: "absolute",
+          left: 30,
+          right: 0,
+          top: 15,
+          width: 100,
+          backgroundColor: "transparent",
+          border: "none",
+        }}
+      >
+        SKILLS
+      </Button>
+      <Button
+        style={{
+          position: "absolute",
+          left: 140,
+          right: 0,
+          width: 100,
+          top: 15,
+          backgroundColor: "transparent",
+          border: "none",
+        }}
+      >
+        PROJECTS
+      </Button>
+      <Button
+        style={{
+          position: "absolute",
+          left: 270,
+          right: 0,
+          width: 100,
+          top: 15,
+          backgroundColor: "transparent",
+          border: "none",
+        }}
+      >
+        RESUME
+      </Button>
+
+      <Button
+        style={{
+          position: "absolute",
+          left: 390,
+          right: 0,
+          width: 100,
+          top: 15,
+          backgroundColor: "transparent",
+          border: "none",
+        }}
+      >
+        CONTACTS
+      </Button>
+    </div>
+  );
+}
 
 export default class Testimonials extends Component {
   state = {
@@ -55,15 +114,18 @@ export default class Testimonials extends Component {
             pointerEvents: "none",
           }}
         >
-          <h1
+          <Menu />
+          <h2
             style={{
               fontSize: "5em",
               textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)",
             }}
           >
             Claire Lu
-          </h1>
+          </h2>
           <h2>Fullstack Developer</h2>
+          <h3>Please try to draw here.</h3>
+          <Button >Download My Resume</Button>
         </div>
 
         <DatGui data={config} onUpdate={this._onUpdate}>

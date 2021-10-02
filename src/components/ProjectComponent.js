@@ -17,20 +17,22 @@ class ProjectCard extends Component {
   renderSelectedProject(project) {
     if (project) {
       return (
-        <Card>
-          <CardBody>
-            <CardTitle>{project.name}</CardTitle>
-          </CardBody>
-          <img with="100%" src={project.image} alt={project.name} />
-          <CardBody>
-            <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </CardText>
-            <CardLink href="#">Card Link</CardLink>
-            <CardLink href="#">Another Link</CardLink>
-          </CardBody>
-        </Card>
+        <div background_color="#000000">
+          <Card>
+            <CardBody>
+              <CardTitle>{project.name}</CardTitle>
+            </CardBody>
+            <img with="100%" src={project.image} alt={project.name} />
+            <CardBody>
+              <CardText>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </CardText>
+              <CardLink href="#">Card Link</CardLink>
+              <CardLink href="#">Another Link</CardLink>
+            </CardBody>
+          </Card>
+        </div>
       );
     }
     return <div />;
@@ -39,7 +41,7 @@ class ProjectCard extends Component {
   render() {
     const directory = this.props.projects.map((project) => {
       return (
-        <div key={project.id} className="col-md-5 m-1">
+        <div key={project.id} className="col-md-5 ">
           <Card>
             <CardBody>
               <CardTitle>{project.name}</CardTitle>
@@ -56,10 +58,24 @@ class ProjectCard extends Component {
     });
 
     return (
-      <div className="container">
-        <div className="row">{directory}</div>
+      <div
+        className="hero"
+        style={{
+
+          padding: 100,
+          alignItems: "center",
+        }}
+      >
         <div className="row">
-          <div className="col-md-5 m-1">
+          <Info />
+        </div>
+
+        <div
+        >
+          {directory}
+        </div>
+        <div className="row">
+          <div className=" col-lg-10 m-1">
             {this.renderSelectedProject(this.state.selectedProject)}
           </div>
         </div>
@@ -69,3 +85,20 @@ class ProjectCard extends Component {
 }
 
 export default ProjectCard;
+
+function Info() {
+  return (
+    <div>
+      <h1
+        style={{
+          color: "white",
+          fontSize: 38,
+          ontSize: "5em",
+          textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        PROJECTS
+      </h1>
+    </div>
+  );
+}
