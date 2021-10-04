@@ -7,7 +7,9 @@ export const PROJECTS = [
     github1: "https://github.com/CXL3/React-Native-Mobile-Project-Meme-Machine",
 
     description:
-      "The frontend is React Native. The backend is node js, express. js and MongoDB. The functions are viewing memes, posting memes, posting comments and group chat.",
+      "A social media platform that allows users to post, view memes and chat with one another.",
+    frontend: "Frontend: React Native",
+    backend: "Backend: Node, Express, MongoDb",
   },
   {
     id: 1,
@@ -15,9 +17,12 @@ export const PROJECTS = [
     image: "assets/images/style.png",
     live: "https://slimstyling.herokuapp.com/home",
     github1: "https://github.com/CXL3/React-Portfolio-styling-website",
+    imageTech: "assets/images/fullstack.png",
 
     description:
-      "Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.",
+      "A mock e-commerce site that recommends a carefully curated selection of clothing. SlimStyle also integrates the Amazon API to help the shoppers to complete the purchases.",
+    frontend: "Technology used: React JS",
+    backend: "",
   },
   {
     id: 2,
@@ -27,17 +32,21 @@ export const PROJECTS = [
     github1: "https://github.com/CXL3/Bootstrap-portfolio-Mama-help-mamas",
 
     description:
-      "Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground.",
+      "I love being a mom, so I created a baby product review site for moms to avoid wasting money on bad products.",
+    frontend: "Technology used: Bootstrap",
+    backend: "",
   },
   {
     id: 3,
     name: "Published Android Apps",
-    image: "assets/images/android.png",
+    image: "assets/images/published.png",
     live: "https://play.google.com/store/apps/developer?id=Claire+L.&hl=en_US",
     github1:
       "https://github.com/CXL3/GratefuList-Android-app-Java-published-by-clairelu",
 
     description:
-      "You'll never want to leave this hidden gem, deep within the lush Redux Woods.",
+      "Since 2016, I published android applications by Java. Some app teaches you Chinese, some help you writting down your grattitude lists.",
+    frontend: "Technology used: Java, SQLite",
+    backend: "",
   },
 ];

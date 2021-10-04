@@ -13,11 +13,11 @@ export default class Header extends Component {
             padding:10,
           }}
         >
-          <nav id="nav-wrap">
+          <nav id="nav-wrap sticky-top ">
             <ul id="nav" className="nav">
               <li className="current">
                 <a
-                  className="m-5"
+                  className="m-4"
                   style={{ backgroundColor: "#000000", color: "#ffffff" }}
                   href="#home"
                 >
@@ -26,7 +26,7 @@ export default class Header extends Component {
               </li>
               <li>
                 <a
-                  className="mr-5"
+                  className="mr-4"
                   style={{ backgroundColor: "#000000", color: "#ffffff" }}
                   href="#skill"
                 >
@@ -35,7 +35,7 @@ export default class Header extends Component {
               </li>
               <li>
                 <a
-                  className="mr-5"
+                  className="mr-4"
                   style={{ backgroundColor: "#000000", color: "#ffffff" }}
                   href="#project"
                 >
@@ -44,16 +44,9 @@ export default class Header extends Component {
               </li>
               <li>
                 <a
-                  className="mr-5"
+
                   style={{ backgroundColor: "#000000", color: "#ffffff" }}
-                >
-                  Resume
-                </a>
-              </li>
-              <li>
-                <a
-                  className="mr-5"
-                  style={{ backgroundColor: "#000000", color: "#ffffff" }}
+                  href="#contact"
                 >
                   Contact
                 </a>

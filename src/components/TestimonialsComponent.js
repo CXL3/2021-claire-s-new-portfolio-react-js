@@ -58,15 +58,15 @@ export default class Testimonials extends Component {
         >
           <h2
             style={{
-              fontSize: "5em",
+              fontSize: "3em",
               textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)",
             }}
           >
-            Claire Lu
+            Hey there! I'm Claire Lu, a full-stack engineer.
           </h2>
-          <h2>Fullstack Developer</h2>
-          <h3>Please try to draw here.</h3>
-          <Button>Download My Resume</Button>
+          <h3>Fullstack Developer</h3><br/><br/><br/>
+          <h1 style={{fontStyle:"italic", marginTop: 190}}>Try to click and drag here</h1>
+
         </div>
 
         <DatGui data={config} onUpdate={this._onUpdate}>

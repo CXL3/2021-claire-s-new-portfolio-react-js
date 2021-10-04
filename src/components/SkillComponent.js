@@ -6,21 +6,23 @@ import ReactParticles from "react-particles-js";
 function Skill() {
   return (
     <section id="skill">
-      <div className="main" id="skillComponent">
+      <div  id="skillComponent">
         <Particles>
           <Hero>
             <div className="container">
               <Info />
               <div className="row">
-                {cards.map((card, i) => (
-                  <div className="column">
-                    <Card>
-                      <div className="card-title">{card.title}</div>
-                      <div className="card-body">{card.description}</div>
-                      <Image ratio={card.imageRatio} src={card.image} />
-                    </Card>
-                  </div>
-                ))}
+
+                  {cards.map((card, i) => (
+                    <div className="col-10 col-lg-4 d-flex align-items-stretch mx-auto mt-3">
+                      <Card >
+                        <div className="card-title">{card.title}</div>
+                        <div className="card-body">{card.description}</div>
+                        <Image ratio={card.imageRatio} src={card.image} />
+                      </Card>
+                    </div>
+                  ))}
+
               </div>
             </div>
           </Hero>
@@ -166,22 +168,19 @@ function Info() {
 const cards = [
   {
     title: "Fullstack web and mobile development⚡️",
-    description:
-      "fill it later",
+    description: "",
     image: "assets/images/fullstack.png",
     imageRatio: 784 / 1016,
   },
   {
     title: "Android Development by Java 👩‍🎨",
-    description:
-      "Published application since 2016.",
+    description: "Published applications since 2016.",
     image: "assets/images/android.png",
     imageRatio: 839 / 1133,
   },
   {
     title: "Certified AWS Solution Architect 🚀",
-    description:
-      "EC2",
+    description: "",
     image: "assets/images/AWS.png",
     imageRatio: 730 / 1030,
   },

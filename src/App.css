@@ -48,8 +48,9 @@ body {
   align-items: stretch;
   justify-content: space-between;
 
-  background: linear-gradient(180deg, #000000, #1e282f 100%);
+  background: linear-gradient(180deg, #000000, #ffffff 100%);
 }
+
 
 .hero-body {
   display: flex;
@@ -69,10 +70,6 @@ body {
   background-color: "#000000";
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .column {
   display: flex;
