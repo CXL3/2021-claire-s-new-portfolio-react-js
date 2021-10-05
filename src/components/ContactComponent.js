@@ -8,11 +8,13 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="container" id="contact" style={{
-        marginTop: 60,
-        marginBottom: 100,
-        
-      }}>
+      <div
+        className="container"
+        id="contact"
+        style={{
+          marginTop: 60,
+        }}
+      >
         <div className="row">
           <div className=" col-sm-3 text-center">
             <h3>Contact</h3>
@@ -59,6 +61,15 @@ class Contact extends Component {
             </a>
           </div>
         </div>
+        <p
+          style={{
+            marginTop: 50,
+
+            fontStyle: "italic",
+          }}
+        >
+          @created by clairelu 2021
+        </p>
       </div>
     );
   }

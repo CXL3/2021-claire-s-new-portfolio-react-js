@@ -32,7 +32,7 @@ export const PROJECTS = [
     github1: "https://github.com/CXL3/Bootstrap-portfolio-Mama-help-mamas",
 
     description:
-      "I love being a mom, so I created a baby product review site for moms to avoid wasting money on bad products.",
+      "I love being a mom, so I created a review site for baby prodsucts. Hopefully other moms could find it useful.",
     frontend: "Technology used: Bootstrap",
     backend: "",
   },
@@ -47,6 +47,19 @@ export const PROJECTS = [
     description:
       "Since 2016, I published android applications by Java. Some app teaches you Chinese, some help you writting down your grattitude lists.",
     frontend: "Technology used: Java, SQLite",
+    backend: "",
+  },
+  {
+    id: 4,
+    name: "Current Portflio Site",
+    image: "assets/images/portfoliopic.png",
+    live: "https://clairehelp.com",
+    github1:
+      "https://github.com/CXL3/2021-claire-s-new-portfolio-react-js",
+
+    description:
+      "My portfolio site is using React-fluid-animation and React-spring libraries, so the viewers can draw and play with the cards.",
+    frontend: "Technology used: React JS",
     backend: "",
   },
 ];
