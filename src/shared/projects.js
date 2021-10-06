@@ -53,7 +53,7 @@ export const PROJECTS = [
     id: 4,
     name: "Current Portflio Site",
     image: "assets/images/portfoliopic.png",
-    live: "https://clairehelp.com",
+    live: "https://clairexilu.com",
     github1:
       "https://github.com/CXL3/2021-claire-s-new-portfolio-react-js",
 
