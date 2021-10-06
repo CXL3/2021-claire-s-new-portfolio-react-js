@@ -14,7 +14,7 @@ function Skill() {
               <div className="row">
 
                   {cards.map((card, i) => (
-                    <div className="col-10 col-lg-4 d-flex align-items-stretch mx-auto mt-3">
+                    <div className="col col-lg-4 d-flex align-items-stretch mx-auto mt-3">
                       <Card >
                         <div className="card-title">{card.title}</div>
                         <div className="card-body">{card.description}</div>

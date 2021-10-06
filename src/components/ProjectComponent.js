@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
-
+import {
+  Button,
+} from "reactstrap";
 
 class ProjectCard extends Component {
   constructor(props) {
@@ -113,7 +115,7 @@ class ProjectCard extends Component {
                 }}
               >
                 <div class="col-3 d-flex align-items-stretch ml-auto mt-3">
-                  <button
+                  <Button
                     style={{
                       backgroundColor: "#ffffff",
                       color: "#000000",
@@ -129,11 +131,11 @@ class ProjectCard extends Component {
                     >
                       VISIT
                     </a>
-                  </button>
+                  </Button>
                 </div>
 
                 <div class="col-3 d-flex align-items-stretch mr-auto mt-3">
-                  <button
+                  <Button
                     style={{
                       backgroundColor: "#ffffff",
                       color: "#ffffff",
@@ -149,7 +151,7 @@ class ProjectCard extends Component {
                     >
                       GITHUB
                     </a>
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>

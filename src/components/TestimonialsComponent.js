@@ -33,7 +33,7 @@ export default class Testimonials extends Component {
       <div
         id="home"
         style={{
-          height: "100vh",
+          height: "80vh",
         }}
       >
         <FluidAnimation config={config} animationRef={this._animationRef} />
@@ -60,16 +60,13 @@ export default class Testimonials extends Component {
             style={{
               fontSize: "3em",
               textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)",
-              marginBottom: "1em",
             }}
           >
-            Hello! I'm Claire Lu, a full-stack engineer.
+            Claire Lu
           </h2>
-          <h3>A mom who loves tech. For some, knitting is their craft, for me coding is mine. </h3>
-          <br />
-          <br />
-          <br />
-          <h1 style={{ fontStyle: "italic", marginTop: 190 }}>
+          <h3>A full stack engineer </h3>
+
+          <h1 style={{ fontStyle: "italic", marginTop: 120}}>
             Try to click and drag here
           </h1>
         </div>
