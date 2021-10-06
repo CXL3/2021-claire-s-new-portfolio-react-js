@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import DatGui, { DatNumber, DatSelect, DatButton } from "react-dat-gui";
-import { Button } from "reactstrap";
+
 import FluidAnimation from "react-fluid-animation";
 import random from "random";
 
