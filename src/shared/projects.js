@@ -20,7 +20,7 @@ export const PROJECTS = [
     imageTech: "assets/images/fullstack.png",
 
     description:
-      "A mock e-commerce site that recommends a carefully curated selection of clothing. SlimStyle also integrates the Amazon API to help the shoppers to complete the purchases.",
+      "A mock e-commerce site that recommends a carefully curated selection of clothing. SlimStyle also integrates the Amazon API to help the shoppers complete the purchases.",
     frontend: "Technology used: React JS",
     backend: "",
   },
@@ -32,7 +32,7 @@ export const PROJECTS = [
     github1: "https://github.com/CXL3/Bootstrap-portfolio-Mama-help-mamas",
 
     description:
-      "I love being a mom, so I created a review site for baby prodsucts. Hopefully other moms could find it useful.",
+      "I love being a mom, so I created a review site for baby products. I think other moms will find it useful.",
     frontend: "Technology used: Bootstrap",
     backend: "",
   },
@@ -45,7 +45,7 @@ export const PROJECTS = [
       "https://github.com/CXL3/GratefuList-Android-app-Java-published-by-clairelu",
 
     description:
-      "Since 2016, I published android applications by Java. Some app teaches you Chinese, some help you writting down your grattitude lists.",
+      "Since 2016, I have published android applications using Java. Some apps teach you Chinese, some help you writing down your gratitude lists.",
     frontend: "Technology used: Java, SQLite",
     backend: "",
   },
