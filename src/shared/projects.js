@@ -8,7 +8,7 @@ export const PROJECTS = [
 
     description:
       "A social media platform that allows users to post, view memes and chat with one another.",
-    frontend: "Frontend: React Native",
+    frontend: "Frontend: React Native, Redux",
     backend: "Backend: Node, Express, MongoDb",
   },
   {
