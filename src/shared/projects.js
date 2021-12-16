@@ -19,7 +19,7 @@ export const PROJECTS = [
     github1: "https://github.com/CXL3/Grocery-Website-React-MERN-eCommerce",
 
     description:
-      "  A Full-stack MERNS e-commerce Mobile application that allows users to login, register, and purchase seafood online.",
+      "  A Full-stack MERNS e-commerce website that allows users to login, register, and purchase seafood online.",
     frontend: "Frontend: React JS, ",
     backend: "Backend: Node, Express, MongoDb",
   },
