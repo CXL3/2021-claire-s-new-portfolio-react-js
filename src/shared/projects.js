@@ -15,7 +15,7 @@ export const PROJECTS = [
     id: 1,
     name: "Asian Seafood Website",
     image: "assets/images/grocery.png",
-    live: "https://www.youtube.com/watch?v=xurBnVRslns&ab_channel=ClaireHelps",
+    live: "https://youtu.be/7QUvckJBq2Q",
     github1: "https://github.com/CXL3/Grocery-Website-React-MERN-eCommerce",
 
     description:
@@ -27,7 +27,7 @@ export const PROJECTS = [
     id: 2,
     name: "MEME MACHINE",
     image: "assets/images/meme.png",
-    live: "https://youtu.be/7QUvckJBq2Q",
+    live: "https://www.youtube.com/watch?v=xurBnVRslns&ab_channel=ClaireHelps",
     github1: "https://github.com/CXL3/React-Native-Mobile-Project-Meme-Machine",
 
     description:
