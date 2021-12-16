@@ -1,9 +1,33 @@
 export const PROJECTS = [
   {
     id: 0,
+    name: "CORE SCORE",
+    image: "assets/images/corescore.png",
+    live: "https://www.youtube.com/watch?v=5o4FroCgSUI",
+    github1: "https://github.com/CXL3/Core-Score-React-Native-MERN-Stack",
+
+    description:
+      "My current freelance in 2021: A Full stack MERNS e-commerce Mobile application that allows users to login, register, take quiz and save the scores in the backend. Currently, we are implementing payment gateway.",
+    frontend: "Frontend: React Native, Redux",
+    backend: "Backend: Node, Express, MongoDB, AWS",
+  },
+  {
+    id: 1,
+    name: "Asian Seafood Website",
+    image: "assets/images/grocery.png",
+    live: "https://www.youtube.com/watch?v=xurBnVRslns&ab_channel=ClaireHelps",
+    github1: "https://github.com/CXL3/Grocery-Website-React-MERN-eCommerce",
+
+    description:
+      "  A Full-stack MERNS e-commerce Mobile application that allows users to login, register, and purchase seafood online.",
+    frontend: "Frontend: React JS, ",
+    backend: "Backend: Node, Express, MongoDb",
+  },
+  {
+    id: 2,
     name: "MEME MACHINE",
     image: "assets/images/meme.png",
-    live: "https://www.youtube.com/watch?v=xurBnVRslns&ab_channel=ClaireHelps",
+    live: "https://youtu.be/7QUvckJBq2Q",
     github1: "https://github.com/CXL3/React-Native-Mobile-Project-Meme-Machine",
 
     description:
@@ -12,7 +36,7 @@ export const PROJECTS = [
     backend: "Backend: Node, Express, MongoDb",
   },
   {
-    id: 1,
+    id: 3,
     name: "SLIMSTYLE",
     image: "assets/images/style.png",
     live: "https://slimstyling.herokuapp.com/home",
@@ -25,7 +49,7 @@ export const PROJECTS = [
     backend: "",
   },
   {
-    id: 2,
+    id: 4,
     name: "MAMA HELP MAMAS",
     image: "assets/images/mom.png",
     live: "",
@@ -37,7 +61,7 @@ export const PROJECTS = [
     backend: "",
   },
   {
-    id: 3,
+    id: 5,
     name: "Published Android Apps",
     image: "assets/images/published.png",
     live: "https://play.google.com/store/apps/developer?id=Claire+L.&hl=en_US",
@@ -50,7 +74,7 @@ export const PROJECTS = [
     backend: "",
   },
   {
-    id: 4,
+    id: 6,
     name: "Current Portflio Site",
     image: "assets/images/portfoliopic.png",
     live: "https://clairexilu.com",
