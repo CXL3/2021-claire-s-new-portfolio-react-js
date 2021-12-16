@@ -20,7 +20,7 @@ function Skill() {
                       <Image
                         ratio={card.imageRatio}
                         
-                        resizeMode='stretch'
+                        resizeMode='contain'
                         src={card.image}
                       />
                     </Card>
