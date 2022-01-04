@@ -33,7 +33,7 @@ export default class Testimonials extends Component {
       <div
         id="home"
         style={{
-          height: "80vh",
+          height: "90vh",
         }}
       >
         <FluidAnimation config={config} animationRef={this._animationRef} />
@@ -67,7 +67,7 @@ export default class Testimonials extends Component {
           <h3>A full stack engineer </h3>
 
           <h1 style={{ fontStyle: "italic", marginTop: 120}}>
-            Try to click and drag here
+            Try to draw here (click and drag) 
           </h1>
         </div>
 

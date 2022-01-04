@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Navbar, Nav, Container } from 'react-bootstrap'
 export default class Header extends Component {
   render() {
     return (
@@ -13,8 +13,24 @@ export default class Header extends Component {
             padding: 10,
           }}
         >
-          <nav id='nav-wrap sticky-top '>
-            <ul id='nav' className='nav'>
+          <Navbar bg='black' variant='dark' expand='lg' collapseOnSelect>
+            <Container>
+              <Navbar.Toggle aria-controls='basic-navbar-nav' />
+              <Navbar.Collapse id='basic-navbar-nav'>
+                <Nav className='ms-auto'>
+                  <Nav.Link href='#home'>Home</Nav.Link>
+                  <Nav.Link href='#skill'>Skills</Nav.Link>
+                  <Nav.Link href='#project'>Projects</Nav.Link>
+                  <Nav.Link href='#contact'>Contact</Nav.Link>
+                  <Nav.Link href='https://drive.google.com/file/d/1hM7MMuX8Tcdj5I44tITJhR47O7Oa4AOy/view?usp=sharing'>
+                    Resume
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+          {/* <nav id='nav-wrap sticky-top '> */}
+          {/* <ul id='nav' className='nav'>
               <li className='current'>
                 <a
                   className='m-4'
@@ -61,7 +77,7 @@ export default class Header extends Component {
                 </a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
         </header>
       </React.Fragment>
     )
