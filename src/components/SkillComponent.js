@@ -13,13 +13,13 @@ function Skill() {
               <Info />
               <div className='row'>
                 {cards.map((card, i) => (
-                  <div className='col-lg-4 d-flex align-items-stretch mx-auto mt-3'>
-                    <Card>
-                      <div className='card-title'>{card.title}</div>
-                      <div className='card-body'>{card.description}</div>
-                      <Image
+                  <div className='col-m-4 d-flex align-items-stretch mx-auto mt-3'>
+                    <Card className='card-title'>
+                      {/* <div className='card-title'>{card.title}</div>
+                      <div className='card-body'>{card.description}</div> */}
+                      <img
                         ratio={card.imageRatio}
-                        
+                        className='card-title'
                         resizeMode='contain'
                         src={card.image}
                       />
@@ -172,19 +172,19 @@ const cards = [
   {
     title: 'Fullstack web and mobile development⚡️',
     description: '',
-    image: 'assets/images/fullstack.jpg',
+    image: 'assets/images/4.png',
     imageRatio: 784 / 1016,
   },
   {
     title: 'Android Development by Java 👩‍🎨',
     description: 'Published applications since 2016.',
-    image: 'assets/images/android.jpg',
+    image: 'assets/images/5.png',
     imageRatio: 839 / 1133,
   },
   {
     title: 'Certified AWS Solution Architect 🚀',
     description: '',
-    image: 'assets/images/AWS.jpg',
+    image: 'assets/images/6.png',
     imageRatio: 730 / 1030,
   },
 ]

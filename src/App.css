@@ -92,8 +92,8 @@ body {
 }
 
 .card-title {
-  font-size: 22px;
-  font-weight: 600;
+  height: 350px;
+  margin: 0px;
 }
 
 .card-body {

@@ -67,7 +67,10 @@ export default class Testimonials extends Component {
           <h3>A full stack engineer </h3>
 
           <h1 style={{ fontStyle: "italic", marginTop: 120}}>
-            Try to draw here (click and drag) 
+            Try to draw here. 
+          </h1>
+          <h1 style={{ fontStyle: "italic", marginTop: 10}}>
+            (click and drag) 
           </h1>
         </div>
 
