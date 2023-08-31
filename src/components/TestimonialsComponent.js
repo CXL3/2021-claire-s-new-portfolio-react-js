@@ -66,7 +66,7 @@ export default class Testimonials extends Component {
           </h2>
           <h4 style={{
               padding: "3em",
-            }} >A fintech engineer experienced in React, NodeJS, Android Studio and more, focused on crafting impactful digital experiences. Currently at HMBradley, I excel in authentication, Plaid integration, and remote team management. With a background in data integrity at Google Maps, I'm a fintech engineer driven by innovation and mentorship.</h4>
+            }} > A fintech engineer experienced in React, NodeJS, Android Studio and more. </h4>
 
           <h1 style={{ fontStyle: "italic", marginTop: 120}}>
             Try to draw here. 
