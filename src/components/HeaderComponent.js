@@ -22,7 +22,7 @@ export default class Header extends Component {
                   <Nav.Link href='#skill'>Skills</Nav.Link>
                   <Nav.Link href='#project'>Projects</Nav.Link>
                   <Nav.Link href='#contact'>Contact</Nav.Link>
-                  <Nav.Link href='https://drive.google.com/file/d/1hM7MMuX8Tcdj5I44tITJhR47O7Oa4AOy/view?usp=sharing'>
+                  <Nav.Link href='https://drive.google.com/file/d/1pMyJBAJQTmgVwJ3j5bHZOdwHF4sU43tt/view?usp=share_link'>
                     Resume
                   </Nav.Link>
                 </Nav>
